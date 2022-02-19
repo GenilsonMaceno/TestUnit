@@ -10,7 +10,7 @@
         "projectUniqueName": "C:\\Projetos\\webapitest\\myapp\\src\\webapitest.csproj",
         "projectName": "webapitest",
         "projectPath": "C:\\Projetos\\webapitest\\myapp\\src\\webapitest.csproj",
-        "packagesPath": "C:\\Users\\4bio.genilson\\.nuget\\packages\\",
+        "packagesPath": "C:\\mypackages\\packageReferences",
         "outputPath": "C:\\Projetos\\webapitest\\myapp\\src\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
@@ -18,6 +18,7 @@
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
+          "C:\\Projetos\\webapitest\\myapp\\NuGet.Config",
           "C:\\Users\\4bio.genilson\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -26,10 +27,8 @@
           "netcoreapp2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/4biomedicamentos/TI/_packaging/FOURBIO.NET.CORE/nuget/v3/index.json": {},
-          "https://pkgs.dev.azure.com/4biomedicamentos/TI/_packaging/FOURBIO.NET.FRAMEWORK/nuget/v3/index.json": {}
+          "C:\\mypackages\\packageReferences": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.1": {
