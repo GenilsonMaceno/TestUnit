@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using src.Context;
+using src.Repositories;
 
 namespace webapitest
 {
@@ -30,6 +31,8 @@ namespace webapitest
             services.AddDbContext<AppDbContext>(opt => {
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+
+            services.AddScoped<IRegisterRepository, RegisterRepository>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
