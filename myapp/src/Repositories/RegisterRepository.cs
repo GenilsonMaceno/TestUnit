@@ -9,6 +9,10 @@ namespace src.Repositories
     public class RegisterRepository : IRegisterRepository
     {
         private readonly AppDbContext _appDbContext;
+
+        public RegisterRepository (AppDbContext appDbContext){
+            _appDbContext = appDbContext;
+        }
         public bool Add(EntityPerson entityPerson)
         {
             try
