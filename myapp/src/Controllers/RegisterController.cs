@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using src.Entities;
 using src.Repositories;
 
 namespace src.Controllers
@@ -20,23 +21,31 @@ namespace src.Controllers
 
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<EntityPerson>> Get()
         {
 
-            return new string[] { "value1", "value2" };
+            var register = _registerRepository.Get().ToList();
+
+            return register;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<IEnumerable<EntityPerson>> Get(int id)
         {
-            return "value";
+            var registerId = _registerRepository.GetById(id).ToList();
+
+            return registerId;
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult<bool> Post([FromBody] EntityPerson entityPerson)
         {
+            var result = _registerRepository.Add(entityPerson);
+
+            return result;
+
         }
 
         // PUT api/values/5

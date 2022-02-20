@@ -17,12 +17,14 @@ namespace src.Repositories
         {
             try
             {
-                if (entityPerson != null)
+                if (entityPerson == null)
                 {
-                    _appDbContext.Add(entityPerson);
-                    _appDbContext.SaveChanges();
-                    return true;
+                     return false;
                 }
+
+                _appDbContext.Add(entityPerson);
+                _appDbContext.SaveChanges();
+                return true;
                 
             }
             catch (Exception)
@@ -30,8 +32,6 @@ namespace src.Repositories
                 
                 return false;
             }
-
-            return false;
         }
 
         public bool Delete(int id)
