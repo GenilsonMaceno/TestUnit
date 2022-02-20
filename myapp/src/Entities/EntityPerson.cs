@@ -1,6 +1,6 @@
 namespace src.Entities
 {
-    public class Entities
+    public class EntityPerson
     {
         public int Entity { get; set; }
         public string Name { get; set; }
