@@ -34,7 +34,7 @@ namespace src.Repositories
         {
             try
             {
-                if (id == null)
+                if (!id.ToString().Any())
                 {
                     return false;
                 }
