@@ -457,3 +457,6 @@ myapp/src/.vscode/launch.json
 myapp/src/obj/project.assets.json
 myapp/src/obj/webapitest.csproj.nuget.dgspec.json
 myapp/src/obj/project.nuget.cache
+myapp/src/.vscode/tasks.json
+myapp/src/Api.Test/.vscode/launch.json
+myapp/src/Api.Test/.vscode/tasks.json
