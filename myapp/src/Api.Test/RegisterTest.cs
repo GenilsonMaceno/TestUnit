@@ -7,6 +7,7 @@ using Xunit;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.AspNetCore.Hosting;
 using webapitest;
+using Api;
 
 namespace apitest
 {
@@ -17,7 +18,7 @@ namespace apitest
         public RegisterTest(){
             var server = new TestServer(new WebHostBuilder()
                      .UseEnvironment("Development")
-                     .UseStartup<Startup>());
+                     .UseStartup<StartupTest>());
 
             _client = server.CreateClient();
         }
