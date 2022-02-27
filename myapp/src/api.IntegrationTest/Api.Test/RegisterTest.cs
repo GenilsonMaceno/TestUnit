@@ -25,10 +25,10 @@ namespace apitest
 
         [Theory]
         [InlineData("Get")]
-        public async Task PostRegister(string method)
+        public async Task RegisterGetAll(string method)
         {
             //arrange
-            var request = new HttpRequestMessage(new HttpMethod(method), "api/register/");
+            var request = new HttpRequestMessage(new HttpMethod(method), "/api/register");
 
             //act
             var response = await _client.SendAsync(request);
