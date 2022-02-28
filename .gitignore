@@ -461,3 +461,5 @@ myapp/src/.vscode/tasks.json
 myapp/src/Api.Test/.vscode/launch.json
 myapp/src/Api.Test/.vscode/tasks.json
 myapp/src/.vscode/extensions.json
+myapp/src/api.IntegrationTest/.vscode/launch.json
+myapp/src/api.IntegrationTest/.vscode/tasks.json
