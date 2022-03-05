@@ -46,7 +46,7 @@ namespace Api.Configurations
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
-                    builder => builder.WithOrigins("http://example.com")
+                    builder => builder.WithOrigins("http://localhost")
                         .AllowAnyMethod()
                         .AllowAnyHeader()
                         .AllowCredentials());
