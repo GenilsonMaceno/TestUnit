@@ -24,7 +24,7 @@ namespace Api.Configurations
             //                      "Server=(localdb)\\mssqllocaldb;Database=InformationSecurityPolicy;Trusted_Connection=True;MultipleActiveResultSets=true";
             // }
             
-            services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer(connection));
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connection));
 
             return services;
         }
